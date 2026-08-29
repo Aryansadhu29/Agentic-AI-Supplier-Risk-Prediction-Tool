@@ -108,7 +108,7 @@ required to fully demo the app — it runs in **MOCK mode** with the same tool
 calls and a rule-based synthesis, so the demo is never blocked by network/API
 availability.
 
-## Key design decisions (for interview discussion)
+## Key design decisions
 
 | Decision | Why |
 |---|---|
