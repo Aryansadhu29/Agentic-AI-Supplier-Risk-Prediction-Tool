@@ -121,12 +121,3 @@ availability.
 | ML model persisted to `models/*.joblib` | No retraining cost on every API restart |
 | Synthetic data with a weighted-formula label + noise | Learnable ground truth without using confidential real data |
 
-## Limitations & next steps
-
-- Synthetic data/tools are illustrative, not connected to real news/credit APIs
-- Classifier accuracy (~0.58 on synthetic, ambiguous boundary cases) is a
-  natural ceiling given labels are close to class boundaries by design;
-  a production system would use continuous risk scores, not just buckets
-- No auth/persistence layer (out of scope for a demo)
-- Could add: vector search over real news for RAG, SHAP explanations per
-  supplier, scheduled re-scoring, Slack/email alerting on Critical suppliers
